@@ -82,39 +82,13 @@ path of the input 3D point cloud:
 train
 {
   ...
-  dataset_path = your_path
-  ...
-}
-```
-We support xyz,npy,npz,ply files.
-In case your data has no normals also adjust:
-```
-network
-{
-    loss
-    {
-        normals_lambda=0
-    }
+  d_in=D
   ...
   dataset_path = your_path
   ...
 }
 ```
-otherwise keep normals_lambda=1.
-If you data is 2D adjust:
-```
-network
-{
-    inputs
-    {
-        d_in=2
-    }
-  ...
-  dataset_path = your_path
-  ...
-}
-```
-otherwise keep d_in=3.
+Where D=3 in case we use 3D data or 2 if we use 2D. We support xyz,npy,npz,ply files.
 
 Then, run training:
 ```
@@ -126,7 +100,7 @@ Finally, to produce the meshed surface, run:
 cd ./code
 python reconstruction/run.py --eval --checkpoint CHECKPOINT
 ```
-where CHECKPOINT is the checkpoint you wish to evaluate of 'latest' if you wish to take the most recent epoch.
+where CHECKPOINT is the epoch you wish to evaluate of 'latest' if you wish to take the most recent epoch.
 ## Citation
 If you find our work useful in your research, please consider citing:
 
