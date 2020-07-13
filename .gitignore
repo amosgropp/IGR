@@ -9,7 +9,5 @@ out*
 err*
 *.gz
 *.pyc
-*.html
-*checkpoint*
 *DS_Store*
 *.csh
