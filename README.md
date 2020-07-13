@@ -1,6 +1,6 @@
 # IGR: Implicit Geometric Regualrization for Learning Shapes
 <p align="center">
-  <img src="teaser.png"/>
+  <img src="teaser.jpg"/>
 </p>
 
 This repository contains an implementation to the ICML 2020 paper: "Implicit Geometric Regualrization for Learning Shapes".
