@@ -14,6 +14,40 @@ The code is compatible with python 3.7 and pytorch 1.2. In addition, the followi
 numpy, pyhocon, plotly, scikit-image, trimesh.
 
 ## Usage
+
+
+### Surface reconstruction
+<p align="center">
+  <img src="recon3D.png"/>
+</p>
+
+IGR can be used to reconstruct a single surface given a point cloud with or without normal data. Adjust reconstruction/setup.json to the
+path of the input 3D point cloud:
+```
+train
+{
+  ...
+  d_in=D
+  ...
+  dataset_path = your_path
+  ...
+}
+```
+Where D=3 in case we use 3D data or 2 if we use 2D. We support xyz,npy,npz,ply files.
+
+Then, run training:
+```
+cd ./code
+python reconstruction/run.py 
+```
+Finally, to produce the meshed surface, run:
+```
+cd ./code
+python reconstruction/run.py --eval --checkpoint CHECKPOINT
+```
+where CHECKPOINT is the epoch you wish to evaluate of 'latest' if you wish to take the most recent epoch.
+
+
 ### Learning shapespace from the D-Faust oriented point clouds
 <p align="center">
   <img src="interpolation.jpg"/>
@@ -71,36 +105,6 @@ cd ./code
 python shapespace/train.py
 ```
 
-### Surface reconstruction
-<p align="center">
-  <img src="recon3D.png"/>
-</p>
-
-IGR can also be used to reconstruct a single surface given a point cloud with or without normal data. Adjust reconstruction/setup.json to the
-path of the input 3D point cloud:
-```
-train
-{
-  ...
-  d_in=D
-  ...
-  dataset_path = your_path
-  ...
-}
-```
-Where D=3 in case we use 3D data or 2 if we use 2D. We support xyz,npy,npz,ply files.
-
-Then, run training:
-```
-cd ./code
-python reconstruction/run.py 
-```
-Finally, to produce the meshed surface, run:
-```
-cd ./code
-python reconstruction/run.py --eval --checkpoint CHECKPOINT
-```
-where CHECKPOINT is the epoch you wish to evaluate of 'latest' if you wish to take the most recent epoch.
 ## Citation
 If you find our work useful in your research, please consider citing:
 
