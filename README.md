@@ -5,7 +5,9 @@
 
 This repository contains an implementation to the ICML 2020 paper: "Implicit Geometric Regualrization for Learning Shapes".
 
-IGR is a deep learning approach for learning implicit shape representations directly from  raw point clouds with or without normal data.
+IGR is a deep learning approach for learning implicit signed distance representations directly from raw point clouds with or without normal data.
+Our method aims to find an SDF by optimizing the network to solve the eikonal equation with the input point cloud as boundary condition.
+Although this is an ill posed condition we enjoy an implicit regualrization coming from the optimization procedure itself which aims our method to simple natrual solutions as can be seen on the figure above.
 
 For more details visit: https://arxiv.org/abs/2002.10099.
 
