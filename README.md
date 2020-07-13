@@ -73,7 +73,7 @@ python shapespace/train.py
 
 ### Surface reconstruction
 <p align="center">
-  <img src="interpolation.jpg"/>
+  <img src="recon3D.png"/>
 </p>
 
 IGR can also be used to reconstruct a single surface given a point cloud with or without normal data. Adjust reconstruction/setup.json to the
