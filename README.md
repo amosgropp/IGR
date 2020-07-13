@@ -24,7 +24,7 @@ numpy, pyhocon, plotly, scikit-image, trimesh.
 </p>
 
 IGR can be used to reconstruct a single surface given a point cloud with or without normal data. Adjust reconstruction/setup.json to the
-path of the input 3D point cloud:
+path of the input 2D/3D point cloud:
 ```
 train
 {
