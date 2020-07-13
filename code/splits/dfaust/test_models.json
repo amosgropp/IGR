@@ -1,0 +1,53 @@
+{
+  "scans": {
+    "50007": {
+      "shake_hips": [
+        "shake_hips.000380"
+      ]
+    },
+    "50004": {
+      "light_hopping_loose": [
+        "light_hopping_loose.004032"
+      ]
+    },
+    "50020": {
+      "jiggle_on_toes": [
+        "jiggle_on_toes.004052"
+      ]
+    },
+    "50021": {
+      "chicken_wings": [
+        "chicken_wings.003594"
+      ]
+    },
+      "50002": {
+        "punching": [
+          "punching.004070"]
+      },
+      "50027": {
+        "light_hopping_loose": [
+          "light_hopping_loose.004358"
+        ]
+      },
+      "50026": {
+        "hips": [
+          "hips.001352"
+        ]
+      },
+      "50022": {
+        "one_leg_jump": [
+          "one_leg_jump.000234"
+        ]
+      },
+      "50025": {
+        "knees": [
+          "knees.002688"
+        ]
+      },
+      "50009": {
+        "one_leg_loose": [
+          "one_leg_loose.000223"
+        ]
+      }
+    }
+}

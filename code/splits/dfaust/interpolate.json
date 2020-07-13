@@ -1,0 +1,11 @@
+{
+  "scans": {
+    "50007": {
+      "shake_shoulders" : ["shake_shoulders.002219"]
+      },
+    "50009": {
+      "light_hopping_loose" : ["light_hopping_loose.002005"]
+      }
+
+  }
+}
