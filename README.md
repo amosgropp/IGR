@@ -1,6 +1,6 @@
 # IGR: Implicit Geometric Regualrization for Learning Shapes
 <p align="center">
-  <img src="interpolation.jpg"/>
+  <img src="IGR.png"/>
 </p>
 
 This repository contains an implementation to the ICML 2020 paper: "Implicit Geometric Regualrization for Learning Shapes".
@@ -15,6 +15,9 @@ numpy, pyhocon, plotly, scikit-image, trimesh.
 
 ## Usage
 ### Learning shapespace from the D-Faust oriented point clouds
+<p align="center">
+  <img src="interpolation.jpg"/>
+</p>
 
 #### Data
 The raw scans can be downloaded from http://dfaust.is.tue.mpg.de/downloads.
@@ -69,8 +72,12 @@ python shapespace/train.py
 ```
 
 ### Surface reconstruction
+<p align="center">
+  <img src="interpolation.jpg"/>
+</p>
+
 IGR can also be used to reconstruct a single surface given a point cloud with or without normal data. Adjust reconstruction/setup.json to the
-path of the input 3D point cloud
+path of the input 3D point cloud:
 ```
 train
 {
@@ -79,7 +86,8 @@ train
   ...
 }
 ```
-And in case your data has no normals adjust:
+We support xyz,npy,npz,ply files.
+In case your data has no normals also adjust:
 ```
 network
 {
@@ -93,6 +101,20 @@ network
 }
 ```
 otherwise keep normals_lambda=1.
+If you data is 2D adjust:
+```
+network
+{
+    inputs
+    {
+        d_in=2
+    }
+  ...
+  dataset_path = your_path
+  ...
+}
+```
+otherwise keep d_in=3.
 
 Then, run training:
 ```
