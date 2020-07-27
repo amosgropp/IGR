@@ -9,7 +9,9 @@ IGR is a deep learning approach for learning implicit signed distance representa
 Our method aims to find an SDF by optimizing the network to solve the eikonal equation with the input point cloud as boundary condition.
 Although this is an ill posed condition we enjoy an implicit regualrization coming from the optimization procedure itself which aims our method to simple natrual solutions as can be seen on the figure above.
 
-For more details visit: https://arxiv.org/abs/2002.10099.
+For more details you can read the paper: https://arxiv.org/abs/2002.10099.
+Or watch our video presentation: https://www.youtube.com/watch?v=6cOvBGBQF9g&t=69s.
+
 
 ## Installation Requirmenets
 The code is compatible with python 3.7 and pytorch 1.2. In addition, the following packages are required:  
