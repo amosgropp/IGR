@@ -13,7 +13,7 @@ For more details:
 
 paper: https://arxiv.org/abs/2002.10099.
 
-video: https://www.youtube.com/watch?v=6cOvBGBQF9g&t=69s.
+video: https://youtu.be/6cOvBGBQF9g.
 
 
 ## Installation Requirmenets
