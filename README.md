@@ -91,7 +91,7 @@ train
 We have uploaded IGR trained network. To produce predictions on unseen test scans, run:
 ```
 cd ./code
-python shapespace/evaluate.py --checkpoint 1200 --exp_name dfaust_pretrained --split dfaust/test_all.json --exps_dir trained_models
+python shapespace/eval.py --checkpoint 1200 --exp_name dfaust_pretrained --split dfaust/test_all.json --exps_dir trained_models
 ```
 In case you wish to generate less models you can use --split dfaust/test_models.json
 
