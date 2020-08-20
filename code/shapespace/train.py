@@ -76,6 +76,8 @@ class ShapeSpaceRunner:
 
                 latent_loss = self.latent_size_reg(indices.cuda())
 
+                loss = loss + latent_loss
+
                 # back propagation
 
                 self.optimizer.zero_grad()
