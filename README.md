@@ -91,7 +91,7 @@ train
 We have uploaded IGR trained network. To produce predictions on unseen test scans, run:
 ```
 cd ./code
-python shapespace/eval.py --checkpoint 1200 --exp_name dfaust_pretrained --split dfaust/test_all.json --exps_dir trained_models
+python shapespace/eval.py --checkpoint 1200 --exp-name dfaust_pretrained --split-dfaust/test_all.json --exps-dir trained_models
 ```
 In case you wish to generate less models you can use --split dfaust/test_models.json
 
@@ -99,7 +99,7 @@ In case you wish to generate less models you can use --split dfaust/test_models.
 To meshs of latent interpolation between two shapes use:
 ```
 cd ./code
-python shapespace/interpolate.py --interval INTERVAL --checkpoint 1200 --exp_name dfaust_pretrained --exps_dir trained_models
+python shapespace/interpolate.py --interval INTERVAL --checkpoint 1200 --exp-name dfaust_pretrained --exps-dir trained_models
 ```
 Where INTERVAL is the number (int) linspace of latent interpolations.
 
