@@ -226,7 +226,8 @@ class ReconstructionRunner:
         self.grad_lambda = self.conf.get_float('network.loss.lambda')
         self.normals_lambda = self.conf.get_float('network.loss.normals_lambda')
 
-        self.with_normals = self.normals_lambda > 0
+        # use normals if data has  normals and normals_lambda is positive
+        self.with_normals = self.normals_lambda > 0 and self.data.shape[-1] >= 6
 
         self.d_in = self.conf.get_int('train.d_in')
 
