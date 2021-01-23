@@ -1,6 +1,8 @@
 import os
 import sys
-import os
+project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+sys.path.append(project_dir)
+os.chdir(project_dir)
 from datetime import datetime
 from pyhocon import ConfigFactory
 from time import time

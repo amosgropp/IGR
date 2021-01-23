@@ -1,5 +1,9 @@
-import argparse
 import os
+import sys
+project_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+sys.path.append(project_dir)
+os.chdir(project_dir)
+import argparse
 import json
 import utils.general as utils
 import torch
