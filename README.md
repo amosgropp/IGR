@@ -1,4 +1,4 @@
-# IGR: Implicit Geometric Regualrization for Learning Shapes
+# IGR: Implicit Geometric Regularization for Learning Shapes
 <p align="center">
   <img src="IGR.png"/>
 </p>
